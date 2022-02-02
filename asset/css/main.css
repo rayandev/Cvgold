@@ -27,6 +27,10 @@
     font-weight: 400;
     src: url('../fonts/IRANSansWeb_Light');
 }
+@font-face {
+    font-family: 'A Shekari';
+    src: url('../fonts/AShekari.ttf');
+}
 
 :root {
     --brown-color: #B68E52;
@@ -133,30 +137,28 @@ li {
 }
 
 .slide-top-title {
-    font-family: var(--second-en-font);
+    font-family: 'A Shekari';
     color: var(--brown-color);
-    letter-spacing: 0.2rem;
-    font-size: 1.5rem;
+    font-size: 4rem;
     text-align: center;
 }
 
 .slide-title {
-    font-family: var(--main-en-font);
-    font-size: 2rem;
-    font-weight: bold;
+    font-family: var(--main-pe-font);
+    font-size: 4rem;
+    word-spacing: 0.5rem;
+    font-weight: 400;
     text-align: center;
     color: var(--white-color);
-    letter-spacing: .5rem;
     margin: 2rem 0;
 }
 
 .slide-sub-title {
-    font-family: var(--main-en-font);
-    font-size: 1.3rem;
+    font-family: var(--main-pe-font);
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     color: var(--brown-color);
-    letter-spacing: .5rem;
 }
 
 /* ----  section ----*/
