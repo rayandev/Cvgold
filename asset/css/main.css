@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dynalight&display=swap');
+
+/*Persian Fonts */
+@font-face {
+    font-family: IRANSans;
+    src: url('../fonts/IRANSansWeb.ttf');
+    src: url('../fonts/IRANSansWeb_Light.ttf');
+    src: url('../fonts/IRANSansWeb_Medium.ttf');
+    src: url('../fonts/IRANSansWeb_UltraLight.ttf');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-weight: bold;
+    src: url('../fonts/IRANSansWeb_Bold.ttf');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-weight: 500;
+    src: url('../fonts/IRANSansWeb_Medium.ttf');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-weight: 400;
+    src: url('../fonts/IRANSansWeb_Light');
+}
+
+:root {
+    --brown-color: #B68E52;
+    --white-color: #FFFFFF;
+    --gray-color: #898989;
+    --black-color: #1B1B1B;
+
+    /*--- Main Persian Font*/
+    --main-pe-font: 'IRANSans', sans-serif;
+
+    /*--- Main English Font*/
+    --main-en-font: 'Lato', sans-serif;
+    --second-en-font: 'Dynalight', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+}
+
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*--------------------------------------------------------*/
+
+
+/* ---- Navbar section ----*/
+
+.navbar {
+    right: -200px;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #1B1B1B;
+    transition: .5s ease-in-out;
+    z-index: 999;
+}
+
+.navbar.nav-active {
+    right: 0;
+}
+
+.menu-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.menu-area .nav-item {
+    padding: 20px 0;
+}
+
+.menu-area .nav-link {
+    color: var(--white-color);
+    font-size: 15px;
+    font-family: var(--main-pe-font);
+}
+
+.menu-area .nav-link:hover {
+    color: var(--brown-color);
+}
+
+.navbar .bars {
+    position: absolute;
+    top: 30px;
+    right: 250px;
+    font-size: 30px;
+}
+
+.navbar .icon-bars {
+    color: var(--black-color);
+}
+
+/* ---- Slide section ----*/
+.slide {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-top-title {
+    font-family: var(--second-en-font);
+    color: var(--brown-color);
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.slide-title {
+    font-family: var(--main-en-font);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white-color);
+    letter-spacing: .5rem;
+    margin: 2rem 0;
+}
+
+.slide-sub-title {
+    font-family: var(--main-en-font);
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--brown-color);
+    letter-spacing: .5rem;
+}
+
+/* ----  section ----*/
