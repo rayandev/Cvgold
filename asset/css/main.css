@@ -310,10 +310,15 @@ li {
 }
 
 /* ---- services section ----*/
+
 .services {
     width: 100%;
     padding: 12rem 0;
-    background-color: var(--gray-color);
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .service-title {
@@ -325,8 +330,35 @@ li {
 
 .service-subtitle {
     font-size: 1.3rem;
-    color: var(--white-color);
+    color: var(--black-color);
     text-align: center;
     font-weight: 500;
     margin: 2rem 0;
+}
+
+.service-box {
+    width: 400px;
+    height: 200px;
+    /* background-color: green; */
+    text-align: right;
+}
+
+.services-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.icon-box {
+    color: var(--brown-color);
+    font-size: 1.8rem;
+}
+
+.service-box-title {
+    font-family: var(--main-pe-font);
+    font-weight: 500;
+    margin: 1.5rem 0;
 }

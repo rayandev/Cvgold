@@ -16,10 +16,14 @@
     }
 
     /* ---- About section ----*/
-    .skill-area {
-        gap: 0;
-        flex-wrap: wrap;
-        padding: 4rem;
+    .about-section {
+        padding: 5rem;
+    }
+
+    /* ---- services section ----*/
+    .service-box {
+        width: 25%;
+        height: 220px;
     }
 
 }
@@ -27,6 +31,19 @@
 @media screen and (max-width:768px) {
     .container {
         max-width: 720px;
+    }
+
+    /* ---- About section ----*/
+    .skill-area {
+        gap: 0;
+        flex-wrap: wrap;
+        padding: 4rem;
+    }
+
+    /* ---- services section ----*/
+    .service-box {
+        width: 90%;
+        height: 200px;
     }
 }
 
