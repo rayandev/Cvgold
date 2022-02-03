@@ -365,6 +365,11 @@ li {
 }
 
 /* ---- services section ----*/
+.work-section {
+    width: 100%;
+    padding: 12rem 0;
+}
+
 .work-box {
     width: 400px;
     height: 400px;
@@ -420,3 +425,4 @@ li {
 .box6 {
     background-image: url('../img/item6.png');
 }
+/* ---- services section ----*/
