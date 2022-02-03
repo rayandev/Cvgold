@@ -11,6 +11,16 @@
         max-width: 960px;
     }
 
+    .col {
+        flex: 1 1 90%;
+    }
+
+    /* ---- About section ----*/
+    .skill-area {
+        gap: 0;
+        flex-wrap: wrap;
+        padding: 4rem;
+    }
 
 }
 

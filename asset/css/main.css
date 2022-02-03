@@ -27,6 +27,7 @@
     font-weight: 400;
     src: url('../fonts/IRANSansWeb_Light');
 }
+
 @font-face {
     font-family: 'A Shekari';
     src: url('../fonts/AShekari.ttf');
@@ -40,6 +41,7 @@
 
     /*--- Main Persian Font*/
     --main-pe-font: 'IRANSans', sans-serif;
+    --second-pe-font: 'A Shekari';
 
     /*--- Main English Font*/
     --main-en-font: 'Lato', sans-serif;
@@ -58,9 +60,17 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: var(--main-pe-font);
+}
+
 .container {
     max-width: 1320px;
     margin: 0 auto;
+}
+
+.col {
+    flex: 1 1 50%;
 }
 
 a {
@@ -69,6 +79,13 @@ a {
 
 li {
     list-style: none;
+}
+
+.btn {
+    padding: 0.5rem 3rem;
+    font-family: var(--main-pe-font);
+    font-size: 15px;
+    /* background-color: goldenrod; */
 }
 
 /*--------------------------------------------------------*/
@@ -81,7 +98,7 @@ li {
     position: fixed;
     width: 200px;
     height: 100%;
-    background-color: #1B1B1B;
+    background-color: #151718;
     transition: .5s ease-in-out;
     z-index: 999;
 }
@@ -117,10 +134,11 @@ li {
     top: 30px;
     right: 250px;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .navbar .icon-bars {
-    color: var(--black-color);
+    color: var(--gray-color);
 }
 
 /* ---- Slide section ----*/
@@ -161,4 +179,154 @@ li {
     color: var(--brown-color);
 }
 
-/* ----  section ----*/
+/* ---- About section ----*/
+.about-section {
+    width: 100%;
+    height: auto;
+    background-color: var(--black-color);
+}
+
+.about-section .container {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 9rem 0 5rem 0;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-title {
+    font-family: var(--second-pe-font);
+    color: var(--brown-color);
+    font-size: 30px;
+    text-align: center;
+}
+
+.about-sub-title {
+    font-family: var(--main-pe-font);
+    font-size: 3rem;
+    word-spacing: 0.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--white-color);
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.about-para {
+    direction: rtl;
+    text-align: justify;
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+.about-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin: 3rem 0 5rem 0;
+}
+
+.about-download-btn {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.about-hire-btn {
+    background-color: var(--brown-color);
+    color: var(--white-color);
+}
+
+.skill-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    gap: 2rem;
+    padding-bottom: 11rem;
+}
+
+
+.process-area {
+    padding-top: 2.2rem;
+}
+
+.process-title {
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+
+.my-process {
+    width: 100%;
+    height: 2px;
+    background-color: var(--gray-color);
+}
+
+.mybar {
+    height: 2px;
+    background-color: var(--brown-color);
+}
+
+.mybar1 {
+    width: 90%;
+}
+
+.mybar2 {
+    width: 60%;
+}
+
+.mybar3 {
+    width: 80%;
+}
+
+.mybar4 {
+    width: 75%;
+}
+
+.mybar5 {
+    width: 80%;
+}
+
+.mybar6 {
+    width: 95%;
+}
+
+/* ---- services section ----*/
+.services {
+    width: 100%;
+    padding: 12rem 0;
+    background-color: var(--gray-color);
+}
+
+.service-title {
+    font-family: var(--second-pe-font);
+    color: var(--brown-color);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.service-subtitle {
+    font-size: 1.3rem;
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 500;
+    margin: 2rem 0;
+}
